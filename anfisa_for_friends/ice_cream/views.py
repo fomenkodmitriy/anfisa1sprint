@@ -23,7 +23,7 @@ ice_cream_catalog = [
 
 def ice_cream_detail(request, pk):
     template = 'ice_cream/detail.html'
-    context = {'ice_cream': ice_cream_catalog[pk]}
+    context = {'ice_cream_detail': ice_cream_catalog[pk]}
     return render(request, template, context)
 
 
